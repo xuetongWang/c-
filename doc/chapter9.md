@@ -78,7 +78,5 @@ class Super
 	int mPrivateInt;
 };
 ```
-* 创建顺序：（1）执行基类的默认构造函数，（2）类的非静态数据成员安装生命顺序创建，（3）执行该类的构造函数如[`代码`](master/chapter9/chapter9.cpp)所示 
-https://github.com/xuetongWang/c-/blob/master/chapter9/chapter9.cpp
-https://github.com/xuetongWang/c-/blob/master/doc/chapter9/chapter9.cpp
+* 创建顺序：（1）执行基类的默认构造函数，（2）类的非静态数据成员安装生命顺序创建，（3）执行该类的构造函数如[代码](chapter9/chapter9.cpp)所示 
 
