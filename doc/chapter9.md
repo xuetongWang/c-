@@ -78,6 +78,6 @@ class Super
 	int mPrivateInt;
 };
 ```
-* 创建顺序：（1）执行基类的默认构造函数，（2）类的非静态数据成员安装生命顺序创建，（3）执行该类的构造函数如[`代码`](Sdk_platform/Kernel_4.9_Src/hardware/nvidia/platform/t18x/common/kernel-dts/t18x-common-plugin-manager/tegra186-quill-p3310-1000-a00-plugin-manager.dtsi)所示 
+* 创建顺序：（1）执行基类的默认构造函数，（2）类的非静态数据成员安装生命顺序创建，（3）执行该类的构造函数如[`代码`](chapter9/chapter9.cpp)所示 
 
 
