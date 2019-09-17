@@ -80,3 +80,39 @@ class Super
 ```
 * 创建顺序：（1）执行基类的默认构造函数，（2）类的非静态数据成员安装生命顺序创建，（3）执行该类的构造函数如[代码](../chapter9/chapter9.cpp)所示 
 
+* 没有默认构造函数的的Super版本，Sub必须显示的告诉如何调用Super的构造函数
+```c
+class Super
+{
+ public:
+	Super(int i);
+};
+
+class Sub: public Super
+{
+ public:
+	Sub();
+	virtual void someMethod() override;
+	void someOtherMethod();
+};
+
+Sub::Sub() :Super(7)
+{
+
+}
+
+```
+
+* 析构顺序：（1）调用类的析构函数 （2）销毁类的数据成员，与创建顺序相反，（3）调用父类的析构函数
+* 纯虚函数方法
+```c
+class SpreadsheetCell
+{
+ public:
+	SpreadsheetCell();
+	virtual void set(const std::string & instring) = 0;
+	virtual std::string getString() const =0;
+}
+```
+
+
